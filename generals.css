@@ -153,10 +153,17 @@ h2 {
 }
 
 .grid--3-cols {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 6.4rem;
-  column-gap: 6.4rem;
-  margin: 8rem 9.6rem;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
 }
 
 .grid {
@@ -170,7 +177,6 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 4.8rem;
   column-gap: 4.8rem;
-  /*margin: 6.4rem;*/
 }
 
 .tag {

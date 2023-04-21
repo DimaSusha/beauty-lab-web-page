@@ -9,7 +9,7 @@
   width: 100%;
   transition: 1s;
   padding: 1rem 10rem;
-  z-index: 1;
+  z-index: 1000;
 }
 
 header.section-header {
@@ -25,6 +25,8 @@ header.section-header {
   opacity: 1;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: inset 0 0 0 3px;
+  box-shadow: 0 0 2.6rem 0 #f3bf92;
 }
 
 /***********NAVIGATION*********/
@@ -95,26 +97,25 @@ header.section-header {
 
 .hero-primary {
   color: #f3f3f3;
-
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 
 .hero-primary-main {
   display: block;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 400;
-  letter-spacing: 3rem;
-  margin-bottom: 6rem;
+  letter-spacing: 2rem;
+  margin-bottom: 2.4rem;
   text-transform: uppercase;
 
   animation: moveInTop 1.5s ease-out;
 }
 
 .hero-primary-second {
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .hero-primary-third {
@@ -328,7 +329,7 @@ header.section-header {
 
 .img-icon {
   color: #f3f3f3;
-  width: 8rem;
+  width: 18%;
 }
 
 .offer-btn {
@@ -393,7 +394,7 @@ header.section-header {
 .price-modal {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   left: 0;
   top: 0;
   height: 100%;
@@ -417,7 +418,7 @@ header.section-header {
   background-color: #444;
   border-radius: 1rem;
   margin: 10% auto;
-  width: 50%;
+  width: 40%;
   box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.5);
   animation: slideIn 0.8s;
 }
@@ -483,6 +484,7 @@ button.btn-accordion {
   transition: 0.3s;
   margin-bottom: 0.6rem;
   border-radius: 2px;
+  font-size: 1.8rem;
 }
 
 .btn-accordion:active,
@@ -520,11 +522,12 @@ button.btn-accordion {
 
 .text-accordion p {
   color: #f3bf92;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   letter-spacing: 0.8px;
+  text-align: end;
 }
 
 .kids__zone {
@@ -615,11 +618,11 @@ button.btn-accordion {
   top: 2rem;
 }
 .composition__photo--p13 {
-  left: 27rem;
-  top: 25rem;
+  left: 23rem;
+  top: 30rem;
 }
 .composition__photo--p14 {
-  left: 14rem;
+  left: 12rem;
   top: 16rem;
 }
 
@@ -664,27 +667,9 @@ button.btn-accordion {
 
 /***********CONTACTS SECTION*********/
 
-/* Define the animation styles */
-.animated {
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
+.location {
+  min-width: 50%;
 }
-
-.fadeIn {
-  opacity: 0;
-  animation-name: fadeIn;
-}
-
-/* Define the animation keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /**************FOOTER*************/
 
 .footer {
