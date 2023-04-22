@@ -510,7 +510,7 @@ button.btn-accordion {
 
 .text-accordion.show {
   background-color: #333;
-  padding: 1.2rem;
+  padding: 2.4rem;
   margin-bottom: 1.2rem;
   margin-top: -0.6rem;
   box-shadow: 0 0.2rem 6rem rgba(243, 191, 146, 0.2);
@@ -523,7 +523,7 @@ button.btn-accordion {
 .text-accordion p {
   color: #f3bf92;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   font-size: 1.6rem;
   margin-bottom: 1rem;
   letter-spacing: 0.8px;
