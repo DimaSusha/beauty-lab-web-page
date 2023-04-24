@@ -302,6 +302,32 @@ header.section-header {
   background-position: bottom;
 }
 
+.offer-makeup {
+  height: 35vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(160, 88, 25, 0.3),
+      rgba(102, 102, 102, 0.3)
+    ),
+    url(img/permanent.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.offer-eyebrow {
+  height: 35vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(160, 88, 25, 0.3),
+      rgba(102, 102, 102, 0.3)
+    ),
+    url(img/eyes-brows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .offer-kids-zone {
   height: 35vh;
   background: linear-gradient(
@@ -309,7 +335,7 @@ header.section-header {
       rgba(160, 88, 25, 0.3),
       rgba(102, 102, 102, 0.3)
     ),
-    url(img/kidz.jpg);
+    url(img/kids.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -501,6 +527,13 @@ button.btn-accordion {
   font-weight: 600;
 }
 
+.chevron-down {
+  width: 1.2rem;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
 .text-accordion {
   opacity: 0;
   max-height: 0;
@@ -521,13 +554,17 @@ button.btn-accordion {
 }
 
 .text-accordion p {
-  color: #f3bf92;
+  color: #f3f3f3;
   font-weight: 300;
   line-height: 1.2;
   font-size: 1.6rem;
   margin-bottom: 1rem;
   letter-spacing: 0.8px;
   text-align: end;
+}
+
+.price {
+  border-bottom: 1px solid #f3bf92;
 }
 
 .kids__zone {
