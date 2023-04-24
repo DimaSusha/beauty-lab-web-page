@@ -67,17 +67,17 @@
     <main>
       <h2 id="offers" class="heading-secondary">Наши услуги</h2>
       <section class="offers-container grid--4-cols animated">
-        <div class="offer-cabinet">
+        <div class="offer-cabinet" data-modal="modalPrice1">
           <div class="offer-haircut">
             <h2 class="cabinet-heading">מספרה</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/hair-cutting.png"
                 alt="icon-woman-haircut"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button class="btn btn-price" data-modal="modalPrice1">
                 פרטים ומחיר
@@ -99,81 +99,139 @@
             </div>
             <div class="modal-content">
               <div class="accordion modal-accordion">
-                <button class="btn-accordion">מספרה גברים</button>
+                <button class="btn-accordion">
+                  מספרה גברים
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="chevron-down"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </button>
                 <div class="text-accordion">
-                  <p><strong>תספורת גברים &mdash; ₪ 50</strong> &middot;</p>
-                  <p><strong>עיצוב זקן &mdash; ₪ 30</strong> &middot;</p>
                   <p>
-                    <strong>תספורת גברים + עיצוב זקן &mdash; ₪ 70</strong>
+                    <strong class="price">תספורת גברים &mdash; ₪ 50</strong>
                     &middot;
                   </p>
                   <p>
-                    <strong>תספורת גבר + צבע החל מ &mdash; ₪ 150-200</strong>
+                    <strong class="price">עיצוב זקן &mdash; ₪ 30</strong>
                     &middot;
                   </p>
                   <p>
-                    <strong>תספורת גבר + החלקה החל מ &mdash; ₪ 200</strong>
+                    <strong class="price"
+                      >תספורת גברים + עיצוב זקן &mdash; ₪ 70</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong>החלקה לגבר החל מ &mdash; ₪ 200-350</strong> &middot;
-                  </p>
-                  <p>
-                    <strong>צבע/ שטיפה לגבר החל מ &mdash; ₪ 100-150</strong>
+                    <strong class="price"
+                      >תספורת גבר + צבע החל מ &mdash; ₪ 150-200</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong>עיצוב שיער לגבר (פן) &mdash; ₪ 30</strong> &middot;
+                    <strong class="price"
+                      >תספורת גבר + החלקה החל מ &mdash; ₪ 200</strong
+                    >
+                    &middot;
+                  </p>
+                  <p>
+                    <strong class="price"
+                      >החלקה לגבר החל מ &mdash; ₪ 200-350</strong
+                    >
+                    &middot;
+                  </p>
+                  <p>
+                    <strong class="price"
+                      >צבע/ שטיפה לגבר החל מ &mdash; ₪ 100-150</strong
+                    >
+                    &middot;
+                  </p>
+                  <p>
+                    <strong class="price"
+                      >עיצוב שיער לגבר (פן) &mdash; ₪ 30</strong
+                    >
+                    &middot;
                   </p>
                 </div>
 
                 <button class="btn-accordion">מספרה נשים</button>
                 <div class="text-accordion">
                   <p>
-                    <strong>תספורת נשים + חפיפה + פן &mdash; ₪ 120-250</strong>
+                    <strong class="price"
+                      >תספורת נשים + חפיפה + פן &mdash; ₪ 120-250</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong>צבע שורש + חפיפה + פן &mdash; ₪ 180</strong>
+                    <strong class="price"
+                      >צבע שורש + חפיפה + פן &mdash; ₪ 180</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong
+                    <strong class="price"
                       >צבע ראש מלא + חפיפה + פן החל מ &mdash; ₪ 150-250</strong
                     >
                     &middot;
                   </p>
                   <p>
-                    <strong
+                    <strong class="price"
                       >גוונים / פסים / אומברה החל מ &mdash; ₪ 1200 - 500</strong
                     >
                     &middot;
                   </p>
                   <p>
-                    <strong>טיפול אמפולה + חפיפה &mdash; ₪ 50</strong> &middot;
+                    <strong class="price"
+                      >טיפול אמפולה + חפיפה &mdash; ₪ 50</strong
+                    >
+                    &middot;
                   </p>
                   <p>
-                    <strong
+                    <strong class="price"
                       >צבע+תספורת + פן + טיפול אמפולה &mdash; ₪ 400</strong
                     >
                     &middot;
                   </p>
                   <p>
-                    <strong>עיצוב שיער (פן) החל מ &mdash; ₪ 60-120</strong>
+                    <strong class="price"
+                      >עיצוב שיער (פן) החל מ &mdash; ₪ 60-120</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong>החלקה יפנית החל מ &mdash; ₪ 1000-2500</strong>
+                    <strong class="price"
+                      >החלקה יפנית החל מ &mdash; ₪ 1000-2500</strong
+                    >
                     &middot;
                   </p>
                   <p>
-                    <strong>החלקה אורגנית החל מ &mdash; ₪ 550</strong> &middot;
+                    <strong class="price"
+                      >החלקה אורגנית החל מ &mdash; ₪ 550</strong
+                    >
+                    &middot;
                   </p>
                 </div>
                 <button class="btn-accordion">מספרה ילדים</button>
                 <div class="text-accordion">
-                  <p><strong>תספורת ילד &mdash; ₪ 50</strong> &middot;</p>
-                  <p><strong>תספורת ילדה &mdash; ₪ 100-150</strong> &middot;</p>
+                  <p>
+                    <strong class="price">תספורת ילד &mdash; ₪ 50</strong>
+                    &middot;
+                  </p>
+                  <p>
+                    <strong class="price">תספורת ילדה &mdash; ₪ 100-150</strong>
+                    &middot;
+                  </p>
                 </div>
                 <!--<button class="btn-accordion">
                   женская стрижка 120₪ - 250₪
@@ -399,22 +457,22 @@
 
         <div class="offer-cabinet">
           <div class="offer-manicure">
-            <h2 class="cabinet-heading">Маникюр</h2>
-            <p class="icon-offer">
+            <h2 class="cabinet-heading">מניקור</h2>
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/manicure.png"
                 alt="icon woman hand manicure"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
                 class="btn btn-price"
                 data-modal="modalPrice2"
               >
-                Подробнее
+                פרטים ומחיר
               </button>
             </div>
           </div>
@@ -429,26 +487,39 @@
                 alt="icon woman hand manicure"
                 style="filter: brightness(0) invert(1)"
               />
-              <h2>Маникюр</h2>
+              <h2>מניקור</h2>
             </div>
             <div class="modal-content">
               <div class="accordion modal-accordion">
-                <button class="btn-accordion">эстетический маникюр 130₪</button>
+                <button class="btn-accordion">מניקור אסתטי</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>מניקור אסתטי</strong> הוא סוג של מניקור השונה
+                    ממניקור רפואי ומיועד לקישוט וטיפוח הציפורניים. המניקור הזה
+                    כולל פעולות כמו הסרת הקטיקולה, עיצוב הלוח ציפורניים וטיפול
+                    בעור מסביב לציפורניים בשמן מיוחד
+                  </p>
+                  <p><strong class="price"> 130 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Эстетический маникюр</strong> - это вид
                     маникюра, который отличается от медицинского маникюра и
                     направлен на украшение и уход за ногтями. Этот вид маникюра
                     включает в себя такие процедуры, как удаление кутикулы,
                     формирование ногтевой пластины,обработка кожи вокруг ногтя
                     специальным маслом.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">
-                  мужской эстетический маникюр 100₪
-                </button>
+                <button class="btn-accordion">מניקור גברים</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>מניקור גברים</strong> הוא סוג של מניקור המיועד
+                    במיוחד לגברים. זה כולל בדרך כלל ניקוי וסידור של הציפורניים
+                    והעור שסביבם ואינו כולל צביעה של הציפורניים. המניקור גברים
+                    כולל פעולות כמו גזירת הקצוות של הציפורניים, הסרת עור יבש
+                    וקשה מסביב לציפורניים, טיפול בסדקים והמרכזה של הציפורניים.
+                  </p>
+                  <p><strong class="price"> 140 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Мужской эстетический маникюр</strong> - это
                     вид маникюра, который отличается от медицинского маникюра и
                     направлен на украшение и уход за ногтями. Этот вид маникюра
@@ -461,13 +532,21 @@
                     технике выполнения. Например, у мужчин ногтевая пластина
                     чаще бывает толще, поэтому может потребоваться более
                     интенсивная обработка.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">
-                  эстетический маникюр с покрытием 200₪
-                </button>
+                <button class="btn-accordion">מניקור ג'ל לק</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>מניקור ג'ל</strong> לק הוא סוג של מניקור המשתמש
+                    בציפוי ג'ל לק במקום צביעת הציפורניים בצבע רגיל. המניקור כולל
+                    הכנת הציפורניים וטיפול בקטיקולה כמו במניקור אסתטי רגיל, אך
+                    כאשר מגיעים לצביעת הציפורניים נעשה שימוש בציפוי ג'ל לק
+                    המאפשר צביעה מדוייקת ועמידה יותר מצביעת הציפורניים בצבע
+                    רגיל. הציפוי ג'ל לק מתייבש תחת למנורת UV או LED ומשאיר את
+                    הציפורניים חלקים, עמידים וברקניים לאורך זמן.
+                  </p>
+                  <p><strong class="price"> 170 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Эстетический маникюр с покрытием</strong> -
                     это процедура, которая включает в себя уход за ногтями и
                     кожей рук, а также нанесение покрытия на ногти.
@@ -487,11 +566,21 @@
                     Важно помнить, что правильный уход за ногтями и кожей рук
                     после процедуры поможет сохранить эффект дольше и избежать
                     повреждения ногтей.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">ремонт ногтя 30₪</button>
+                <button class="btn-accordion">תיקון ציפורן</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>תיקון ציפורן</strong> תיקון ציפורן הוא תהליך שבו
+                    מתקנים את הציפורן שנפגע או שנשבר. תיקון ציפורן עשוי לכלול
+                    תהליכים כמו תיקון של ציפורן שנשבר על ידי ניתוח והדבקתו בעזרת
+                    דבק מיוחד, או החלפה של חלק מהציפורן אם הפגיעה היא קשה יותר.
+                    בנוסף, תיקון ציפורן עשוי לכלול טיפול בציפורן נפוח או מצומצם
+                    על ידי מתיחתו או חיתוך חלק ממנו כדי להשיג את הגודל הנכון
+                    והתאמתו לציפורניים האחרות.
+                  </p>
+                  <p><strong class="price"> 30 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Ремонт ногтя</strong> - это процедура
                     восстановления поврежденного ногтя с помощью специальных
                     материалов и инструментов. Ногти могут повреждаться из-за
@@ -507,11 +596,24 @@
                     материал, который поддерживает форму ногтя и защищает его от
                     дальнейшего повреждения. Этот материал может быть гелевым
                     или акриловым.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">наращивание ногтей 350₪</button>
+                <button class="btn-accordion">בנייה ציפורניים</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>בנייה ציפורניים</strong> בנייה של ציפורניים הוא
+                    תהליך בו נוצרת ציפורניים מלאות ועמידות, באמצעות הנחת שכבות
+                    של חומר ציפורני על הציפורניים הקיימות. התהליך מתחיל עם קיפול
+                    וטיפול בקטיקולה כדי להכין את הציפורניים לקבלת הבניה, ואז
+                    מתחילים לשכב שכבות של חומר ציפורני בעזרת מברשת וציפורני
+                    נוזלי. החומר הציפורני מתייבש באמצעות מנורת UV או LED, ואז
+                    משכיבים עוד שכבות של חומר ציפורני על הציפורניים ומתייבשים
+                    שוב. התהליך ממשיך כך עד שנוצרת שכבת ציפורני עמידה ומלאה.
+                    כאשר הבניה מושלמת, הציפורניים מסוגלים להחזיק בצבע טוב יותר
+                    ולהיות יותר חזקים ועמידים לאורך זמן.
+                  </p>
+                  <p><strong class="price"> 380 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Наращивание ногтей</strong> - это процесс
                     увеличения длины натуральных ногтей с помощью специальных
                     материалов и технологий.
@@ -520,13 +622,19 @@
                     Наращивание ногтей может быть очень полезным для тех, у кого
                     проблемы с ногтями, или для тех, кто хочет изменить свой
                     образ.
-                  </p>
+                  </p>-->
                 </div>
                 <button class="btn-accordion">
-                  быстрый дизайн (наклейка, фольга, стемпинг) 0₪
+                  עיצוב מהיר ( מדבקות, נייר כסף, סטמפינג)
                 </button>
                 <div class="text-accordion">
                   <p>
+                    <strong>עיצוב מהיר</strong> עיצוב ציפורניים מהיר הוא דרך
+                    נהדרת וקלה לקשט את הציפורניים במהירות ובקלות, בלי צורך
+                    בהארכה.
+                  </p>
+                  <p><strong class="price"> 0 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Быстрый дизайн ногтей</strong> - это
                     отличный способ быстро и легко украсить ногти без
                     необходимости наращивания. Некоторые из популярных методов
@@ -557,34 +665,25 @@
                     навыков. Они могут быть использованы для создания
                     уникального и красивого дизайна на ногтях для особых
                     мероприятий или просто для повседневного использования.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">
-                  ручной дизайн (1 ноготь) 8₪
-                </button>
+                <button class="btn-accordion">פרנץ' מניקור</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>פרנץ' מניקור</strong> הוא סגנון מניקור צרפתי קלאסי,
+                    המיוחד בשימוש בכלי עבודה ייחודיים וטכניקות עדינות כדי ליצור
+                    מראה ייחודי ויוקרתי לציפורניים. הסגנון מתאים במיוחד לנשים
+                    שרוצות לקבל מראה קלאסי ונקי, עם ציפורניים מעוצבות ומטופחות
+                    בצורה יפהפייה. המניקור כולל חיתוך וצביעת הציפורניים בצבע
+                    נטול פשרות ומתוחכם, בשילוב ציפוי לוחות הציפורניים בצבע לבן
+                    או בצבע טבעי, המעניק מראה עדין ומאוזן לציפורניים.
+                  </p>
+                  <p><strong class="price"> 35 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Ручной дизайн ногтей</strong> - это
                     техника, при которой ногти украшаются вручную с помощью
                     кистей, красок, лент и других инструментов.
-                  </p>
-                </div>
-                <button class="btn-accordion">
-                  Френч маникюр (10 ногтей) 35₪
-                </button>
-                <div class="text-accordion">
-                  <p>
-                    &middot; <strong>Френч маникюр</strong> - это классический
-                    стиль маникюра, который включает в себя белую полоску на
-                    кончике ногтя и розовый, бежевый или натуральный оттенок на
-                    остальной поверхности ногтя.
-                  </p>
-                  <p>
-                    Френч маникюр может быть изменен с помощью различных цветов
-                    и оттенков, а также изменения ширины полоски на кончике
-                    ногтя. Он может быть дополнен также дополнительными
-                    украшениями, такими как стразы или бусины.
-                  </p>
+                  </p>-->
                 </div>
               </div>
               <div class="modal-composition"></div>
@@ -594,22 +693,22 @@
 
         <div class="offer-cabinet">
           <div class="offer-pedicure">
-            <h2 class="cabinet-heading">Педикюр</h2>
-            <p class="icon-offer">
+            <h2 class="cabinet-heading">פדיקור</h2>
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/pedicure.png"
                 alt="icon woman leg pedicure"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
                 class="btn btn-price"
                 data-modal="modalPrice3"
               >
-                Подробнее
+                פרטים ומחיר
               </button>
             </div>
           </div>
@@ -624,60 +723,94 @@
                 alt="icon woman leg pedicure"
                 style="filter: brightness(0) invert(1)"
               />
-              <h2>Педикюр</h2>
+              <h2>פדיקור</h2>
             </div>
             <div class="modal-content">
               <div class="accordion modal-accordion">
-                <button class="btn-accordion">эстетический педикюр 200₪</button>
+                <button class="btn-accordion">פדיקור אסתטי</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>פדיקור אסתטי</strong> הוא טיפול לטיפוח והקפדה על
+                    רגליים וכפות הרגליים, הכולל ניקוי וטיפול בעור הרגליים, תיקון
+                    ציפורניים, חיתוך וסיום לציפורניים, וטיפול בקרקפת הכפות.
+                    המטרה העיקרית של פדיקור אסתטי היא להעניק לכף הרגליים מראה
+                    נקי, מטופח ויפהפה, כך שהן ירגישו נוחות ובריאות. הטיפול מתאים
+                    לכל אחד, במיוחד לאלו שסובלים מבעיות ברגליים כמו יבשות,
+                    סדקים, נפיחות, פטרת עור, ציפורניים שבורות וכדומה.
+                  </p>
+                  <p><strong class="price"> 200 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Эстетический педикюр</strong> - это
                     процедура ухода за ногами, которая включает в себя обрезание
                     ногтей, удаление кутикулы, удаление ороговевшей кожи,
                     массаж. Это позволяет поддерживать здоровье и красоту ног, а
                     также предотвращать многие проблемы, такие как натоптыши и
                     мозоли.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">
-                  мужской эстетический педикюр 220₪
-                </button>
+                <button class="btn-accordion">פדיקור גברים</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>פדיקור גברים </strong> הוא טיפול לטיפוח והקפדה על
+                    רגליים וכפות הרגליים, הכולל ניקוי וטיפול בעור הרגליים, תיקון
+                    ציפורניים, חיתוך וסיום לציפורניים, וטיפול בקרקפת הכפות.
+                    המטרה העיקרית של פדיקור אסתטי היא להעניק לכף הרגליים מראה
+                    נקי, מטופח ויפהפה, כך שהן ירגישו נוחות ובריאות. הטיפול מתאים
+                    לכל אחד, במיוחד לאלו שסובלים מבעיות ברגליים כמו יבשות,
+                    סדקים, נפיחות, פטרת עור, ציפורניים שבורות וכדומה.
+                  </p>
+                  <p><strong class="price"> 220 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Мужской эстетический педикюр</strong> - это
                     процедура ухода за ногами, которая предназначена специально
                     для мужчин. Эта процедура включает в себя удаление
                     ороговевшей кожи, обрезание ногтей, массаж. Мужской педикюр
                     помогает сохранить здоровье ног, улучшает внешний вид и
                     повышает самооценку.
-                  </p>
+                  </p>-->
                 </div>
-                <button class="btn-accordion">
-                  эстетический педикюр с покрытием 250₪
-                </button>
+                <button class="btn-accordion">פדיקור אסתטי עם לק ג'ל</button>
                 <div class="text-accordion">
                   <p>
+                    <strong>פדיקור אסתטי עם לק ג'ל</strong> הוא טיפול קוסמטי
+                    המשלב פדיקור וקישוט ציפורניים באמצעות לק ג'ל. הטיפול עשוי
+                    לכלול חיתוך וטיפול בציפורניים, הסרת עור מתים וטיפול במחלות
+                    עור הרגליים, ובנוסף הוא כולל קישוט של ציפורניים באמצעות לק
+                    ג'ל. הלק ג'ל הוא חומר שקושר ישירות לציפורניים ויוצר שכבת
+                    הגנה ומבטיח שהן יישארו יפות ובריאות לאורך זמן. כמו כן, הלק
+                    ג'ל עשוי להיות זמין במגוון צבעים וגוונים ומאפשר לך ליצור את
+                    המראה המבוקש עבור ציפורניים שלך. הפדיקור אסתטי עם לק ג'ל הוא
+                    טיפול מפנק ומרגיע שיכול להוסיף יופי וברק לרגליים וציפורניים
+                    שלך.
+                  </p>
+                  <p><strong class="price"> 250 ₪ </strong></p>
+                  <!--<p>
                     &middot; <strong>Эстетический педикюр с покрытием</strong> -
                     это процедура ухода за ногами, которая включает в себя все
                     шаги классического эстетического педикюра, а также покрытие
                     ногтей гелем для длительного сохранения их красивого
                     внешнего вида.
-                  </p>
+                  </p>-->
                 </div>
-                <!--<button class="btn-accordion">
-                  Лечебный педикюр от 270₪
-                </button>
-                  <div class="text-accordion">
-                    <p>
-                      &middot; <strong></strong>
-                    </p>
-                    <p>
-                    
-                    </p>
-                    <p>
-                      
-                    </p>
-                  </div>-->
+                <button class="btn-accordion">פדיקור רפואי</button>
+                <div class="text-accordion">
+                  <p>
+                    <strong>פדיקור רפואי</strong> הוא טיפול רפואי המתמקד בבריאות
+                    הרגליים ובמניעת וטיפול במחלות הרגליים. הטיפול כולל חיתוך
+                    ציפורניים, טיפול בעור הרגליים, הסרת עור מתים, טיפול בבעיות
+                    של ציפורניים, טיפול בנקעים ובחתכי עור וטיפול בבעיות כגון
+                    פטרת רגליים, כאבי רגליים, דלקות ופציעות. פדיקור רפואי יכול
+                    להיות מומלץ עבור אנשים עם בעיות רפואיות ברגליים כמו סוכרת,
+                    כיוון שאנשים עם סוכרת יכולים להיות על סיכון לבעיות ברגליים
+                    כמו פצעים ודלקות. טיפול פדיקור רפואי מסייע לאנשים עם בעיות
+                    רפואיות ברגליים לשמור על בריאותם ולמנוע התפתחות תופעות לא
+                    רצויות נוספות.
+                  </p>
+                  <p><strong class="price"> 270 ₪ החל מ</strong></p>
+                  <!--<p>&middot; <strong></strong></p>
+                  <p></p>
+                  <p></p>-->
+                </div>
               </div>
               <div class="modal-composition"></div>
             </div>
@@ -687,14 +820,14 @@
         <div class="offer-cabinet">
           <div class="offer-massage">
             <h2 class="cabinet-heading">Массаж</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/body-massage.png"
                 alt="icon woman lays massage"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -853,14 +986,14 @@
         <div class="offer-cabinet">
           <div class="offer-laser">
             <h2 class="cabinet-heading">Лазер</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/hair-removal.png"
                 alt="icon leg hair laser removing"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -876,14 +1009,14 @@
         <div class="offer-cabinet">
           <div class="offer-sauna">
             <h2 class="cabinet-heading">Фитобочка</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/barrel.png"
                 alt="icon man in the barrel"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -936,14 +1069,14 @@
         <div class="offer-cabinet">
           <div class="offer-solarium">
             <h2 class="cabinet-heading">Солярий</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/solarium.png"
                 alt="icon man standing in solarium"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1007,14 +1140,14 @@
         <div class="offer-cabinet">
           <div class="offer-press">
             <h2 class="cabinet-heading">Пресотерапия</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/rolling-press.png"
                 alt="icon pressing"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1026,18 +1159,32 @@
             </div>
           </div>
         </div>
+        <div id="modalPrice8" class="price-modal">
+          <div class="price-info">
+            <span class="close-btn">&times;</span>
+            <div class="modal-heading">
+              <img
+                class="img-icon-modal"
+                src="img/icon-png/rolling-press.png"
+                alt="icon pressing"
+                style="filter: brightness(0) invert(1)"
+              />
+              <h2>Пресотерапия</h2>
+            </div>
+          </div>
+        </div>
 
         <div class="offer-cabinet">
           <div class="offer-cosmetology">
             <h2 class="cabinet-heading">Косметология</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/facial-treatment.png"
                 alt="icon woman face and hands cosmetology"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1061,56 +1208,20 @@
               />
               <h2>Косметология</h2>
             </div>
-            <table>
-              <tr>
-                <td>классическая чистка лица</td>
-                <td>350₪</td>
-              </tr>
-              <tr>
-                <td>чистка лица премиум</td>
-                <td>400₪</td>
-              </tr>
-              <tr>
-                <td>
-                  комбинированная- классическая чистка лица (пиллинг/аппарат)
-                </td>
-                <td>450₪</td>
-              </tr>
-              <tr>
-                <td>классическая касмара</td>
-                <td>400₪</td>
-              </tr>
-              <tr>
-                <td>аппаратная косметология</td>
-                <td>450₪</td>
-              </tr>
-              <tr>
-                <td>процедура для зоны глаз касмара</td>
-                <td>400₪</td>
-              </tr>
-              <tr>
-                <td>классическая (подростки)</td>
-                <td>320₪</td>
-              </tr>
-              <tr>
-                <td>фототерапия</td>
-                <td>200₪</td>
-              </tr>
-            </table>
           </div>
         </div>
 
         <div class="offer-cabinet">
-          <div class="offer-press">
+          <div class="offer-makeup">
             <h2 class="cabinet-heading">Перманентный макияж</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/makeup.png"
                 alt="icon woman face makeup"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1124,16 +1235,16 @@
         </div>
 
         <div class="offer-cabinet">
-          <div class="offer-press">
+          <div class="offer-eyebrow">
             <h2 class="cabinet-heading">Брови / ресницы</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/eye-make-up.png"
                 alt="icon woman eye"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1157,38 +1268,20 @@
               />
               <h2>брови/ресницы</h2>
             </div>
-            <table>
-              <tr>
-                <td>ламинирование ресниц</td>
-                <td>250₪</td>
-              </tr>
-              <tr>
-                <td>ламинирование бровей с покраской</td>
-                <td>300₪</td>
-              </tr>
-              <tr>
-                <td>ламинирование бровей и ресниц с покраской</td>
-                <td>350₪</td>
-              </tr>
-              <tr>
-                <td>корекция формы бровей с покраской</td>
-                <td>150₪</td>
-              </tr>
-            </table>
           </div>
         </div>
 
         <div class="offer-cabinet">
           <div class="offer-kids-zone">
             <h2 class="cabinet-heading">Игровая зона для детей</h2>
-            <p class="icon-offer">
+            <span class="icon-offer">
               <img
                 class="img-icon"
                 src="img/icon-png/toys.png"
                 alt="icon toys teddy bear"
                 style="filter: brightness(0) invert(1)"
               />
-            </p>
+            </span>
             <div class="offer-btn">
               <button
                 id="modalBtn"
@@ -1236,39 +1329,60 @@
         <div class="row">
           <div class="col-1-of-2">
             <p class="paragraph">
-              Мы рады представить вам нашу коллекцию косметических продуктов,
-              которые помогут вам сохранить здоровую и сияющую кожу, а также
-              здоровые и крепкие волосы.
+              אנו שמחים להציג לכם את קולקציית מוצרי הטיפוח שלנו, המסייעים לשמירה
+              על עור בריא וזוהר וגם על שיער בריא וחזק. הקולקציה שלנו כוללת מגוון
+              רחב של קרמים לפנים, המעניקים לחות ומזינים את העור, וגם עוזרים
+              להתמודד עם שינויי גיל ובעיות עור.
             </p>
             <p class="paragraph">
-              Наша коллекция включает в себя кремы для лица, которые разработаны
-              для увлажнения и питания кожи, а также помогают бороться с
-              возрастными изменениями и другими проблемами кожи.
+              בנוסף, אנו מציעים קרמי שיזוף המכילים מרכיבים טבעיים ומספקים שיזוף
+              אחיד ועמיד, וגם מטפלים בעור. הקולקציה שלנו כוללת גם שמפו לכל סוגי
+              השיער, המעושר במרכיבים טבעיים כמו שמן עץ התה ואלוורה, ומסייע לחזק
+              את השיער ולהעניק לו ברק בריא. הקוסמטיקה שלנו מיוצרת בשימוש
+              במרכיבים טבעיים, כמו שמנים ותמציות צמחים אורגניים. אנו מציעים גם
+              קוסמטיקה טבעית שאינה מכילה חומרים כימיים מזיקים ואינה נבדקת על
+              בעלי חיים. אנו גאים בכך שקולקצייתנו מתאימה לכל סוגי העור והשיער,
+              ואנו בטוחים שתמצאו כאן מוצרים שיסייעו לכם לשמור על היופי והבריאות
+              שלכם.
             </p>
             <p class="paragraph">
+              אנו מתעסקים תמיד בשיפור קולקציית המוצרים הקוסמטיים שלנו כדי לספק
+              ללקוחותינו את הטוב ביותר. אנו משוכנעים שתהיו מרוצים מאיכות המוצרים
+              שלנו ותעריכו את התוצאות שהם יעניקו לעור ולשיער שלכם. אנא אל תהססו
+              לפנות אלינו לקבלת מידע נוסף על הקוסמטיקה שלנו או לקבל המלצות
+              לבחירת המוצרים המתאימים לכם ביותר.
+            </p>
+            <!--<p class="paragraph leng-ru">
+              Мы рады представить вам коллекцию косметических продуктов, которые
+              помогут сохранить здоровую и сияющую кожу, а также здоровые и
+              крепкие волосы. Наша коллекция включает в себя широкий выбор
+              кремов для лица, которые увлажняют и питают кожу, а также помогают
+              бороться с возрастными изменениями и проблемами кожи.
+            </p>
+            <p class="paragraph leng-ru">
               Кроме того, мы предлагаем кремы для загара, которые содержат
-              натуральные ингредиенты, способствующие равномерному загару и
-              уходу за кожей.
-            </p>
-            <p class="paragraph">
-              Наши шампуни разработаны специально для различных типов волос,
-              включая сухие, жирные и поврежденные волосы. Они обогащены
-              природными компонентами, такими как масло чайного дерева, алоэ
-              вера и протеины шелка, которые помогают укрепить волосы и придать
-              им здоровый блеск.
-            </p>
-            <p class="paragraph">
-              Мы также предлагаем натуральную косметику, которая не содержит
-              вредных химических веществ и не тестируется на животных. Вся наша
+              натуральные ингредиенты и обеспечивают равномерный и стойкий
+              загар, а также ухаживают за кожей. Наша коллекция также включает
+              шампуни для всех типов волос, которые обогащены натуральными
+              компонентами, такими как масло чайного дерева и алоэ вера, и
+              помогают укрепить волосы и придать им здоровый блеск. Наша
               косметика изготавливается с использованием натуральных
               ингредиентов, таких как органические масла и экстракты растений.
+              Мы также предлагаем натуральную косметику, которая не содержит
+              вредных химических веществ и не тестируется на животных. Мы
+              гордимся тем, что наша коллекция подходит для всех типов кожи и
+              волос, и мы уверены, что вы найдете здесь продукты, которые
+              помогут вам сохранить красоту и здоровье.
             </p>
-            <p class="paragraph">
-              Наша коллекция косметики и кремов подходит для всех типов кожи и
-              волос. Мы уверены, что вы найдете здесь продукты, которые будут
-              отвечать вашим потребностям и помогут вам сохранить красоту и
-              здоровье своей кожи и волос.
-            </p>
+            <p class="paragraph leng-ru">
+              Мы постоянно работаем над улучшением нашей коллекции косметических
+              продуктов, чтобы предоставлять нашим клиентам только лучшее. Мы
+              убеждены, что вы останетесь довольны качеством наших продуктов и
+              оцените результаты, которые они дадут вашей коже и волосам. Не
+              стесняйтесь обращаться к нам за дополнительной информацией о нашей
+              косметике или для получения рекомендаций по выбору продуктов,
+              которые подходят вам лучше всего.
+            </p>-->
           </div>
           <div class="col-1-of-2">
             <div class="composition">

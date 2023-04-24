@@ -107,6 +107,10 @@ body {
   background: linear-gradient(to bottom, transparent, rgba(243, 191, 146, 0.8));
 }
 
+p {
+  text-align: right;
+}
+
 li {
   list-style: none;
   display: list-item;
