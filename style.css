@@ -506,11 +506,12 @@ button.btn-accordion {
   cursor: pointer;
   width: 100%;
   outline: none;
-  padding: 0.8rem;
+  padding: 1.2rem 4.8rem;
   transition: 0.3s;
   margin-bottom: 0.6rem;
   border-radius: 2px;
   font-size: 1.8rem;
+  text-align: end;
 }
 
 .btn-accordion:active,
@@ -532,6 +533,12 @@ button.btn-accordion {
   height: 100%;
   display: inline-block;
   overflow: hidden;
+  transition: all 0.5s;
+}
+
+.chevron-down.active {
+  transform: rotate(-180deg);
+  transition: all 0.5s;
 }
 
 .text-accordion {

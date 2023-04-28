@@ -94,7 +94,7 @@ function closeModal() {
 };
 
 
-//Function to close modal if outside click
+//Function to close modal if click outside 
 window.addEventListener('click', clickOutside);
 
 function clickOutside(e){
@@ -130,6 +130,34 @@ for (let i = 0; i < acc.length; i++) {
     currentAccordion = this.classList.contains('active') ? this : null;
   };
 };
+
+
+/**********ROTATE SHEVRON***********/
+
+// Get all the buttons and chevron-down SVG elements
+const btnAccordions = document.querySelectorAll('.btn-accordion');
+const chevronDowns = document.querySelectorAll('.chevron-down');
+
+// Loop through each button
+btnAccordions.forEach((btnAccordion, index) => {
+  // Add a click event listener to the button
+  btnAccordion.addEventListener('click', () => {
+    // Check if the corresponding chevron-down SVG element has the 'active' class
+    if (chevronDowns[index].classList.contains('active')) {
+      // Remove the 'active' class from the corresponding chevron-down SVG element
+      chevronDowns[index].classList.remove('active');
+    } else {
+      // Loop through each chevron-down SVG element
+      chevronDowns.forEach((chevronDown) => {
+        // Remove the 'active' class from all chevron-down SVG elements
+        chevronDown.classList.remove('active');
+      });
+
+      // Add the 'active' class to the corresponding chevron-down SVG element
+      chevronDowns[index].classList.add('active');
+    }
+  });
+});
 
 
 /********************SET CURRENT YEAR*****************/
