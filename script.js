@@ -160,6 +160,18 @@ btnAccordions.forEach((btnAccordion, index) => {
 });
 
 
+
+/***********CONTACTS SECTION*********/ 
+
+const textSocial = document.querySelectorAll('.text-social p');
+textSocial.forEach((element) => {
+  element.innerHTML = element.innerText.split("").map(
+    (char, i) =>
+      `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
+  ).join("");
+});
+
+
 /********************SET CURRENT YEAR*****************/
 
 const year = document.querySelector('.year');
