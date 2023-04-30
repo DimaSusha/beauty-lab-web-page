@@ -114,6 +114,7 @@ body {
 
 p {
   text-align: right;
+  line-height: 1.6;
 }
 
 li {
@@ -154,11 +155,13 @@ h2 {
 }
 
 .heading-secondary {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
+  padding: 2.4rem 6.4rem 9.6rem;
   color: #eb9851;
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid rgba(207, 113, 31, 0.5);
+  background: linear-gradient(to top, transparent, rgba(243, 243, 243, 0.8));
 }
 
 .grid--3-cols {
@@ -215,7 +218,7 @@ h2 {
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4.8rem;
 }
 
 .u-margin-bottom-big {

@@ -102,20 +102,19 @@ header.section-header {
 }
 
 .hero-primary-main {
+  margin-top: 1.2rem;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.hero-primary-second {
   display: block;
   font-size: 3.2rem;
   font-weight: 400;
   letter-spacing: 2rem;
   margin-bottom: 2.4rem;
   text-transform: uppercase;
-
   animation: moveInTop 1.5s ease-out;
-}
-
-.hero-primary-second {
-  margin-top: 1.6rem;
-  font-size: 6rem;
-  font-weight: 500;
 }
 
 .hero-primary-third {
@@ -127,7 +126,7 @@ header.section-header {
   font-family: sans-serif;
   color: #f3f3f3;
   display: block;
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   font-weight: 500;
   letter-spacing: 1px;
 
@@ -711,10 +710,9 @@ button.btn-accordion {
 }
 
 /***********CONTACTS SECTION*********/
-/*.row {
-  background-color: rgba(243, 243, 243, 0.377);
-  
-}*/
+.row {
+  min-height: 50vh;
+}
 
 .location {
   max-width: 45%;
@@ -726,7 +724,7 @@ button.btn-accordion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1.2rem 8rem;
+  margin: 0 0 2.4rem 0;
 }
 
 .circle {
@@ -737,7 +735,6 @@ button.btn-accordion {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.4rem;
 }
 
 .logo-social {
@@ -753,19 +750,22 @@ button.btn-accordion {
 .instagram {
   background: url(img/icon-png/instagram.png);
   background-size: cover;
-  filter: brightness(0.85);
+  filter: brightness(0.9);
+  border: 2px solid #f3f3f3;
 }
 
 .facebook {
   background: url(img/icon-png/facebook.png);
   background-size: cover;
-  filter: brightness(0.85);
+  filter: brightness(0.9);
+  border: 2px solid #f3f3f3;
 }
 .whatsapp {
   background: url(img/icon-png/whatsapp.png);
   background-size: cover;
-  filter: brightness(0.85);
+  filter: brightness(0.9);
   background-color: #f3f3f3;
+  border: 2px solid #f3f3f3;
 }
 
 .text-social {
@@ -790,6 +790,13 @@ button.btn-accordion {
   position: absolute;
   left: 50%;
   transform-origin: 0 8rem;
+}
+
+.cont-address {
+  background-color: rgba(44, 41, 41, 0.377);
+  border-radius: 2rem;
+  padding: 2.4rem;
+  box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.5);
 }
 
 /**************FOOTER*************/
