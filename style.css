@@ -580,7 +580,7 @@ button.btn-accordion {
   color: #3a501e;
 }
 
-/**************SECTION ABOUT COSMETICS*************/
+/**************SECTION COSMETICS*************/
 
 .section-cosmetics {
   background-color: rgba(243, 243, 243, 0.5);
@@ -590,9 +590,83 @@ button.btn-accordion {
   font-weight: 400;
 }
 
-.composition {
+.wrapper {
+  max-width: 50vw;
+  display: flex;
   position: relative;
 }
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.4);
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.wrapper i {
+  top: 50%;
+  position: absolute;
+  color: #f3f3f3;
+  background: #444;
+  height: 4.8rem;
+  width: 4.8rem;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 4.8rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.4);
+}
+
+.wrapper i:first-child {
+  left: -2.4rem;
+  display: none;
+}
+
+.wrapper i:last-child {
+  right: -2.4rem;
+}
+
+.composition__photo {
+  height: 50rem;
+  min-width: 30rem;
+  object-fit: cover;
+  margin-left: 1.2rem;
+  width: calc(100% / 3);
+  box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.4);
+}
+
+.composition__photo:first-child {
+  margin-left: 0px;
+}
+
+/*////////!!!!!!MEDIA!!!!!!!//////////*/
+
+@media screen and (max-width: 1900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+/*
 .composition__photo {
   width: 15%;
   box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.4);
@@ -613,6 +687,7 @@ button.btn-accordion {
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
 }
+*/
 
 /*
 .composition__photo--p1 {
@@ -676,6 +751,11 @@ button.btn-accordion {
 }
 */
 
+.col-1-of-2 {
+  justify-content: center;
+  align-items: center;
+}
+
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
@@ -729,8 +809,8 @@ button.btn-accordion {
 
 .circle {
   position: relative;
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -789,7 +869,7 @@ button.btn-accordion {
 .text-social span {
   position: absolute;
   left: 50%;
-  transform-origin: 0 8rem;
+  transform-origin: 0 9rem;
 }
 
 .cont-address {
@@ -797,6 +877,55 @@ button.btn-accordion {
   border-radius: 2rem;
   padding: 2.4rem;
   box-shadow: 0 1.2rem 1.8rem 0.6rem rgba(51, 51, 51, 0.5);
+}
+
+.phone-call,
+.send-mail {
+  color: #f3f3f3;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.phone-call:hover,
+.send-mail:hover {
+  color: #cf711f;
+  background-color: rgba(243, 243, 243, 0.8);
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+
+.hero-primary-sub a {
+  position: relative;
+}
+
+.hero-primary-sub a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #cf711f;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-primary-sub a:hover::after {
+  transform: scaleX(1);
+}
+
+.hero-primary-sub a::after {
+  animation: underlineAnimation 2s infinite alternate;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 /**************FOOTER*************/
